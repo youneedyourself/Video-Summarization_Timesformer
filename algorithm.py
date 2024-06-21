@@ -32,7 +32,7 @@ def offline(number_of_clusters, features):
 
     return closest_clips_frames
 
-def online(features, threshold):
+def online(features, threshold, ratio):
 
     i = 0
     previous = i
@@ -48,7 +48,7 @@ def online(features, threshold):
                 clip.append(b)
 
             # randomly select 15% of the frames from the clip list
-            random_num = round(len(clip)*0.15)
+            random_num = round(len(clip)*ratio/100)
             # sort the frames in the clip list to ensure the order of the frames
             random_Frames = sorted(random.sample(clip, random_num))
             i = j
@@ -61,13 +61,13 @@ def online(features, threshold):
     if i==j:
         for c in range(j*8, j*8+8):
             clip.append(c)
-            random_num = round(len(clip)*0.15)
+            random_num = round(len(clip)*ratio/100)
             random_Frames = sorted(random.sample(clip, random_num))
 
     else: # (i<j)
         for c in range(i*8, (j+1)*8):
             clip.append(c)
-            random_num = round(len(clip)*0.15)
+            random_num = round(len(clip)*ratio/100)
             random_Frames = sorted(random.sample(clip, random_num))
 
     clips.extend(random_Frames)
