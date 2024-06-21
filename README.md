@@ -1,2 +1,12 @@
-# Video-Summarization_Timesformer
- Video summarization with Timesformer model and K-means, SSD
+---
+title: Video-summarization Timesformer
+emoji: 🐠
+colorFrom: yellow
+colorTo: blue
+sdk: gradio
+sdk_version: 4.36.0
+app_file: app.py
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference

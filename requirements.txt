@@ -1,0 +1,16 @@
+gradio_imageslider
+torch
+pillow
+torchvision
+opencv-python
+huggingface_hub
+pytorchvideo==0.1.5
+spaces
+transformers
+torch==2.1.0
+torchvision==0.16.0
+faiss-cpu==1.7.4
+matplotlib==3.7.4
+moviepy==1.0.3
+pandas
+pyvi==0.1.1
