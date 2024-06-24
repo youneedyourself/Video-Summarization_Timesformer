@@ -9,4 +9,9 @@ app_file: app.py
 pinned: false
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+# Timesformer-for-Video-Summarization
+
+Deploy video summarization web application using Gradio and Hugging Face Spaces.
+
+Original: https://github.com/youneedyourself/Timesformer-for-Video-Summarization
+
